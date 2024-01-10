@@ -1,0 +1,156 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
+
+.about__description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.about__hr {
+    border-color: var(--clr-slate800);
+}
+
+.about__subtitle {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+}
+
+.about__skill_wrapper {
+    display: flex;
+}
+
+.about__skills_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: '\1F44D';
+    padding-left: 1em;
+    flex: 1
+}
+
+.about__skills_li {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.about__skills_li::before {
+    content: '';
+    margin-left: 0.5em;
+}
+
+
+/* xs  */
+@media (min-width:475px) {
+    .about__img_wrapper {
+        margin: 0 auto;
+    }
+    .about {
+        gap: 1.5em;
+    }
+
+    .about__content {
+        gap: 1.5em;
+    }
+
+    .about__title {
+        font-size: var(--size-3xl);
+    }
+
+    .about__description {
+        font-size: var(--size-base);
+    }
+
+    .about__subtitle {
+        font-size: var(--size-base);
+    }
+
+    .about__skills_li {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm  */
+@media (min-width:640px) {
+    .about__img_wrapper {
+        margin: 0 auto;
+    }
+
+    .about__img {
+        width: 28em;
+    }
+}
+/* L  */
+@media (min-width:1024px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about__content {
+        gap: 1.5em;
+    }
+
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+
+    .about__description {
+        font-size: var(--size-lg);
+    }
+
+    .about__subtitle {
+        font-size: var(--size-lg);
+    }
+
+    .about__skills_li {
+        font-size: var(--size-lg);
+    }
+}
+
+/* XL  */
+@media (min-width:1280px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about__content {
+        gap: 2em;
+    }
+
+    .about__title {
+        font-size: var(--size-5xl);
+    }
+
+    .about__description {
+        font-size: var(--size-xl);
+    }
+
+    .about__subtitle {
+        font-size: var(--size-xl);
+    }
+
+    .about__skills_li {
+        font-size: var(--size-xl);
+    }
+    .about__img {
+        width: 30.75em;
+    }
+}
