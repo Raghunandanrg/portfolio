@@ -4,6 +4,11 @@ const theme=localStorage.getItem('theme');
 //onmount
 theme && document.body.classList.add(theme)
 themeToggleButton.forEach(element => {
+    
+
+
+
+    
     element.addEventListener('click',()=>{
         document.body.classList.toggle('light-mode');
         if(document.body.classList.contains('light-mode')){
